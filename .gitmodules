@@ -1,0 +1,3 @@
+[submodule "contrib/programs_investigator"]
+	path = contrib/programs_investigator
+	url = https://github.com/davitkalantaryan/programs_investigator.git
