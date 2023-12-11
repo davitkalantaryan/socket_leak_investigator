@@ -15,13 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\src\tests\main_socket_keak_analyze_test01.cpp">
+    <ClCompile Include="..\..\..\src\tests\main_socket_leak_analyze_test01.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\contrib\programs_investigator\src\core\leak_analyze\programs_investigator_core_socket_leak.cpp">
+    <ClCompile Include="..\..\..\contrib\programs_investigator\src\core\leak_analyze\programs_investigator_core_socket_leak.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\contrib\programs_investigator\src\core\leak_analyze\programs_investigator_core_analyze_leaking02.cpp">
+    <ClCompile Include="..\..\..\contrib\programs_investigator\src\core\leak_analyze\programs_investigator_core_analyze_leaking02.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\contrib\programs_investigator\contrib\stack_investigator\contrib\cinternal\src\core\cinternal_core_hash_dllhash.c">

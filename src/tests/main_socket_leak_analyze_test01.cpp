@@ -25,10 +25,45 @@ int main(int a_argc, char* a_argv[])
 	(void)a_argc;
 	(void)a_argv;
 
+	{
+        WORD wVersionRequested;
+        WSADATA wsaData;
+        //SOCKET aTestSocket;
+
+        wVersionRequested = MAKEWORD(2, 2);
+
+        if (WSAStartup(wVersionRequested, &wsaData) != 0) {
+            exit(1);
+        }
+
+        /* Confirm that the WinSock DLL supports 2.2.		*/
+        /* Note that if the DLL supports versions greater	*/
+        /* than 2.2 in addition to 2.2, it will still return*/
+        /* 2.2 in wVersion since that is the version we		*/
+        /* requested.										*/
+
+        if (LOBYTE(wsaData.wVersion) != 2 || HIBYTE(wsaData.wVersion) != 2) {
+            WSACleanup();
+            exit(1);
+        }
+
+        //aTestSocket = socket(AF_INET, SOCK_STREAM, 0);
+        //if (aTestSocket == INVALID_SOCKET) {
+        //    exit(1);
+        //}
+        //closesocket(aTestSocket);
+	}
+
 	while (1) {
 		aSocket = socket(AF_INET, SOCK_STREAM, 0);
 		fprintf(stdout, "aSocket = %d\n", (int)aSocket);
 	}
+
+
+    {
+        WSACleanup();
+    }
+
 
 	return 0;
 }

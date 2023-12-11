@@ -306,9 +306,9 @@
     <ClCompile Include="..\..\..\contrib\programs_investigator\contrib\stack_investigator\contrib\cinternal\src\core\cinternal_core_replace_function_windows.c" />
     <ClCompile Include="..\..\..\contrib\programs_investigator\contrib\stack_investigator\src\core\stack_investigator_backtrace_common.c" />
     <ClCompile Include="..\..\..\contrib\programs_investigator\contrib\stack_investigator\src\core\stack_investigator_backtrace_windows.c" />
-    <ClCompile Include="..\..\..\contrib\programs_investigator\src\core\leak_analyze\programs_investigator_core_analyze_leaking02.cpp" />
-    <ClCompile Include="..\..\..\contrib\programs_investigator\src\core\leak_analyze\programs_investigator_core_socket_leak.cpp" />
-    <ClCompile Include="..\..\..\src\tests\main_socket_keak_analyze_test01.cpp" />
+    <ClCompile Include="..\..\..\contrib\programs_investigator\src\core\leak_analyze\programs_investigator_core_analyze_leaking02.c" />
+    <ClCompile Include="..\..\..\contrib\programs_investigator\src\core\leak_analyze\programs_investigator_core_socket_leak.c" />
+    <ClCompile Include="..\..\..\src\tests\main_socket_leak_analyze_test01.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
